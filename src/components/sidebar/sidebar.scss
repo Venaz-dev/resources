@@ -1,26 +1,32 @@
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
-button{
-    border: none;
-    &:focus{
-        outline: none;
-    }
-    cursor: pointer;
+button {
+  border: none;
+  &:focus {
+    outline: none;
+  }
+  cursor: pointer;
 }
-.text-white{
-    color: white;
+.text-white {
+  color: white;
 }
-.bg-secondary{
-    background-color: #fe8503;
-}
-
-.pl-2{
-    padding-left: 20%;
+.bg-secondary {
+  background-color: #fe8503;
 }
 
-.pr-2{
-    padding-right: 20px;
+.pl-2 {
+  padding-left: 20%;
+}
+
+.pr-2 {
+  padding-right: 20px;
+}
+.bg-clear {
+  background-color: none;
+}
+button {
+  background: unset;
 }
 
 .sidebar-container {
@@ -37,96 +43,98 @@ button{
     padding: 100px 0;
     // position: fixed;
     // overflow-y: scroll;
-    &::-webkit-scrollbar{
-        width: 5px;
+    &::-webkit-scrollbar {
+      width: 5px;
     }
-    &::-webkit-scrollbar-track{
-        background-color: #F6FBFF;
+    &::-webkit-scrollbar-track {
+      background-color: #f6fbff;
     }
-    &::-webkit-scrollbar-thumb{
-        background: #037cfe;
-        border-radius: 20px;
+    &::-webkit-scrollbar-thumb {
+      background: #037cfe;
+      border-radius: 20px;
+    }
+    .active {
+      background-color: #fe8503;
+      border-left: 3px solid #ffffff;
     }
 
-    
+    .side-menu-item {
+      margin: 10px 0;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      height: 55px;
+      cursor: pointer;
+      img {
+        margin-right: 20px;
+      }
+      .menu-item-text {
+        width: 60%;
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 16px;
+        margin: 0;
+      }
 
-    .side-menu-item{
-        margin: 10px 0;
+      &:hover {
+        background-color: #fe8503;
+        border-left: 3px solid #ffffff;
+      }
+    }
+    .connect-apps {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      margin-top: 20px;
+      .title {
         display: flex;
+        p {
+          width: 70%;
+          font-size: 13px;
+          margin-right: 20px;
+        }
+        img {
+          width: 20px;
+        }
+      }
+      .connect-item {
+        display: flex;
+        justify-content: flex-end;
+        img {
+          width: 20px;
+          margin-right: 20px;
+        }
+        p {
+          color: white;
+          font-size: 13px;
+          width: 60%;
+        }
+      }
+    }
+    .logout {
+      margin-top: 40px;
+      margin-right: 10px;
+      button {
+        height: 30px;
+        width: 100%;
+        font-size: 14px;
+        display: flex;
+        justify-content: center;
         align-items: center;
-        justify-content: flex-end;
-        height: 55px;
-        img{
-            margin-right: 20px;
-        }
-        .menu-item-text{
-            width: 60%;
-            text-decoration: none;
-            color: #ffffff;
-            font-size: 16px;
-            margin: 0;
-        }
-
-        &:hover{
-            background-color: #fe8503;
-            border-left: 3px solid #ffffff;
-        }
-    }
-    .connect-apps{
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        margin-top: 20px;
-        .title{
-            display: flex;
-            p{
-                width: 70%;
-                font-size: 13px;
-                margin-right: 20px;
-            }
-            img{
-                width: 20px;
-            }
-        }
-        .connect-item{
-            display: flex;
-            justify-content: flex-end;
-            img{
-                width: 20px;
-                margin-right: 20px;
-            }
-            p{
-                color: white;
-                font-size: 13px;
-                width: 60%;
-            }
-        }
-       
-    }
-    .logout{
-        margin-top: 40px;
-        margin-right: 10px;
-        button{
-            height: 30px;
-            width: 100%;
-            font-size: 14px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        img{
-            margin-left: 10px;
-            height: 15px;
-        }
+      }
+      img {
+        margin-left: 10px;
+        height: 15px;
+      }
     }
   }
-  .content{
-      position: relative;
+  .content {
+    position: relative;
     //   left: 25vw;
-      width: 70%;
-      padding: 0 20px;
-      padding-right: 0;
-      display: flex;
-      justify-content: space-between;
+    width: 70%;
+    padding: 0 20px;
+    padding-right: 0;
+    display: flex;
+    justify-content: space-between;
   }
 }
