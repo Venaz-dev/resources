@@ -1,0 +1,60 @@
+.right-nav{
+    margin-top: 110px;
+    width: 30%;
+    background-color: #037cfe;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+
+    h4{
+        font-size: 18px;
+    }
+    h2{
+        font-size: 29px;
+    }
+
+    .active-class{
+       
+        padding: 20px 15px;
+        
+        img{
+            width: 54px;
+        height: 54px;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-bottom: 18px;
+        }
+        button{
+            width: 70px;
+            height: 25px;
+        }
+        p{
+            font-size: 14px;
+        }
+        h2,p{
+            margin: 0;
+            margin-bottom: 10px;
+        }
+    }
+    .border{
+        border-bottom: 2px solid #6aaef7;
+    }
+    .message{
+        margin: 20px 0;
+        h2,p{
+            margin: 0;
+            margin-bottom: 10px;
+        }
+        button{
+            margin: 10px 0;
+        }
+    }
+    .calender{
+        width: 80%;
+        padding: 10px;
+        border-radius: 10px;
+    }
+}
