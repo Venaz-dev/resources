@@ -26,47 +26,49 @@ const Sidebar = ({ children }) => {
   return (
     <div className="sidebar-container">
       <div className="sidebar">
-        {menuItems.map((menu, index) => (
-          <div
-            key={index + 1}
-            className={`side-menu-item ${
-              active === menu.link ? "active" : null
-            }`}
-            onClick={() => handleClick(menu.link)}
-          >
-            <img src={menu.icon} />
-            <p className="menu-item-text"> {menu.link}</p>
-          </div>
-        ))}
+        <div className="inner">
+          {menuItems.map((menu, index) => (
+            <div
+              key={index + 1}
+              className={`side-menu-item ${
+                active === menu.link ? "active" : null
+              }`}
+              onClick={() => handleClick(menu.link)}
+            >
+              <img src={menu.icon} />
+              <p className="menu-item-text"> {menu.link}</p>
+            </div>
+          ))}
 
-        <div className="connect-apps pl-2 pr-2">
-          <div className="title">
-            <p className="text-white">Connect Apps</p>
-            <button className="bg-clear">
-              <img src={add} />
+          <div className="connect-apps pl-2 pr-2">
+            <div className="title">
+              <p className="text-white">Connect Apps</p>
+              <button className="bg-clear">
+                <img src={add} />
+              </button>
+            </div>
+            <div className="connect-item">
+              <img src={statistic} />
+              <p>Google Drive</p>
+            </div>
+            <div className="connect-item">
+              <img src={statistic} />
+              <p>Acrobat</p>
+            </div>
+            <div className="connect-item">
+              <img src={statistic} />
+              <p>Word</p>
+            </div>
+            <div className="connect-item">
+              <img src={statistic} />
+              <p>Excel</p>
+            </div>
+          </div>
+          <div className="logout pl-2">
+            <button className="bg-secondary text-white">
+              Logout <img src={statistic} />
             </button>
           </div>
-          <div className="connect-item">
-            <img src={statistic} />
-            <p>Google Drive</p>
-          </div>
-          <div className="connect-item">
-            <img src={statistic} />
-            <p>Acrobat</p>
-          </div>
-          <div className="connect-item">
-            <img src={statistic} />
-            <p>Word</p>
-          </div>
-          <div className="connect-item">
-            <img src={statistic} />
-            <p>Excel</p>
-          </div>
-        </div>
-        <div className="logout pl-2">
-          <button className="bg-secondary text-white">
-            Logout <img src={statistic} />
-          </button>
         </div>
       </div>
       <div className="content">{children}</div>
